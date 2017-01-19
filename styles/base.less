@@ -1,0 +1,383 @@
+@import "syntax-variables";
+atom-text-editor {
+    background-color: @syntax-background-color;
+    color: @main;
+}
+atom-text-editor .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+}
+atom-text-editor .gutter .line-number.cursor-line {
+    color: @main;
+}
+atom-text-editor .gutter .line-number {
+    color: @main;
+}
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
+    color: @main;
+}
+atom-text-editor .wrap-guide {
+    color: @syntax-wrap-guide-color;
+}
+atom-text-editor .indent-guide {
+    color: @main;
+}
+atom-text-editor .invisible-character {
+    color: @syntax-invisible-character-color;
+}
+atom-text-editor .search-results .syntax-marker .region {
+    background-color: transparent;
+    border: @syntax-result-marker-color;
+}
+atom-text-editor .search-results .syntax-marker.current-result .region {
+    border: @syntax-result-marker-color-selected;
+}
+atom-text-editor.is-focused .cursor,
+atom-text-editor .cursor {
+    border-color: @syntax-cursor-color;
+    border-width: 2px;
+}
+atom-text-editor.is-focused .selection .region,
+atom-text-editor .selection .region {
+    background-color: @syntax-selection-color;
+}
+atom-text-editor.is-focused .line-number.cursor-line-no-selection,
+atom-text-editor.is-focused .line.cursor-line,
+atom-text-editor .line-number.cursor-line-no-selection,
+atom-text-editor .line.cursor-line {
+    background-color: @gray;
+}
+.syntax--variable.syntax--parameter.syntax--function {
+    color: @white;
+}
+.syntax--comment,
+.syntax--punctuation.syntax--definition.syntax--comment,
+.syntax--text.cancelled,
+.syntax--meta.syntax--punctuation.syntax--separator,
+.syntax--markup.syntax--strikethrough {
+    color: @very-dark-gray;
+    background-color: #cbcc91;
+}
+.syntax-notes {
+    color:@blue;
+}
+.syntax--text,
+.syntax--source {
+    color: @cyan;
+}
+.syntax--punctuation.syntax--definition.syntax--string,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--array {
+    color: @cyan;
+}
+.syntax-none {
+    color: @cyan;
+}
+.syntax--keyword.syntax--operator {
+    color: @purple;
+}
+.syntax--keyword {
+    color: @purple;
+}
+.syntax--variable {
+    color: @blue;
+}
+.syntax--entity.syntax--name.syntax--function,
+.syntax--meta.syntax--require,
+.syntax--support.syntax--function.syntax--any-method,
+.syntax--meta.syntax--function-call,
+.syntax--support.syntax--function,
+.syntax--keyword.syntax--other.syntax--special-method,
+.syntax--meta.syntax--block-level,
+.syntax--meta.syntax--function-call.syntax--method.syntax--with-arguments .syntax--variable.syntax--function,
+.syntax--source.syntax--js .syntax--meta.syntax--function-call.syntax--method.syntax--without-arguments.syntax--js .syntax--variable.syntax--function.syntax--js {
+    color: @blue;
+}
+.syntax--support.syntax--class,
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class,
+.syntax--variable.syntax--language.syntax--this.syntax--js {
+    color: @orange;
+}
+.syntax--meta.syntax--class {
+    color: @cyan;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+    color: @blue;
+}
+.syntax--storage {
+    color: @purple;
+}
+.syntax--support.syntax--function,
+.syntax--keyword.syntax--operator,
+.syntax--constant.syntax--other.syntax--color,
+.syntax--meta.syntax--tag,
+.syntax--punctuation.syntax--definition.syntax--tag,
+.syntax--punctuation.syntax--separator.syntax--inheritance.syntax--php,
+.syntax--punctuation.syntax--definition.syntax--tag.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html,
+.syntax--meta.syntax--function-call .syntax--meta.syntax--function-call.syntax--arguments .syntax--variable.syntax--parameter.syntax--function,
+.syntax--text.syntax--html.syntax--markdown .syntax--meta.syntax--paragraph .syntax--meta.syntax--link.syntax--inline,
+.syntax--text.syntax--html.syntax--markdown .syntax--meta.syntax--paragraph .syntax--meta.syntax--link.syntax--inline .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--markdown,
+.syntax--text.syntax--html.syntax--markdown .syntax--meta.syntax--paragraph .syntax--meta.syntax--link.syntax--inline .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--markdown {
+    color: @red;
+}
+.syntax--string,
+.syntax--constant.syntax--other.syntax--symbol,
+.syntax--entity.syntax--other.syntax--inherited-class {
+    color: @green;
+}
+.syntax--constant.syntax--numeric {
+    color: @red;
+}
+.syntax-none {
+    color: @red;
+}
+.syntax--meta.syntax--function-call .syntax--meta.syntax--function-call.syntax--arguments {
+    color: @green;
+}
+.syntax-none {
+    color: @red;
+}
+.syntax--constant {
+    color: @red;
+}
+.syntax--entity.syntax--name.syntax--tag,
+.syntax--text.syntax--html.syntax--basic .syntax--meta.syntax--tag.syntax--other.syntax--html .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+    color: @red;
+}
+.syntax--entity.syntax--other.syntax--attribute-name,
+.syntax--meta.syntax--tag.syntax--any.syntax--html .syntax--entity.syntax--other.syntax--attribute-name.syntax--html,
+.syntax--text.syntax--html.syntax--basic .syntax--meta.syntax--tag.syntax--other.syntax--html .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+    color: @light-orange;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+    color: @light-orange;
+}
+.syntax--meta.syntax--selector {
+    color: @purple;
+}
+.syntax-none {
+    color: @red;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--entity.syntax--name.syntax--section {
+    color: @blue;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+    color: @red;
+}
+.syntax--markup.syntax--bold,
+.syntax--punctuation.syntax--definition.syntax--bold,
+.syntax--todo.syntax--bold {
+    font-weight: bold;
+    color: @orange;
+}
+.syntax--markup.syntax--italic,
+.syntax--punctuation.syntax--definition.syntax--italic,
+.syntax--todo.syntax--italic {
+    font-style: italic;
+    color: @purple;
+}
+.syntax--markup.syntax--raw.syntax--inline {
+    color: @light-orange;
+}
+.syntax--string.syntax--other.syntax--link,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--markdown {
+    color: @red;
+}
+.syntax--meta.syntax--link {
+    color: @red;
+}
+.syntax--markup.syntax--list {
+    color: @red;
+}
+.syntax--markup.syntax--quote {
+    color: @red;
+}
+.syntax--meta.syntax--separator {
+    color: @cyan;
+    background-color: darken(@blue,50%);
+}
+.syntax--markup.syntax--inserted {
+    color: @main;
+}
+.syntax--markup.syntax--deleted {
+    color: @red;
+}
+.syntax--markup.syntax--changed {
+    color: @purple;
+}
+.syntax--constant.syntax--other.syntax--color,
+.syntax--meta.syntax--property-value .syntax--support.syntax--constant.named-color.syntax--css {
+    color: @blue;
+}
+.syntax--string.syntax--regexp {
+    color: @cyan;
+}
+.syntax--constant.syntax--character.syntax--escape {
+    color: @red;
+}
+.syntax--punctuation.syntax--section.syntax--embedded,
+.syntax--variable.syntax--interpolation {
+    color: @red;
+}
+.syntax--invalid.syntax--illegal {
+    color: @white;
+    background-color: @red;
+}
+.syntax--invalid.syntax--broken {
+    color: @dark-gray;
+    background-color: @red;
+}
+.syntax--invalid.syntax--deprecated {
+    color: @white;
+    background-color: darken(@red,20%);
+}
+.syntax--invalid.syntax--unimplemented {
+    color: @white;
+    background-color: @green;
+}
+.sublimelinter.annotations {
+    color: darken(@red,20%);
+    background-color: @white;
+}
+.sublimelinter.outline.syntax--illegal {
+    color: @white;
+    background-color: @red;
+}
+.sublimelinter.syntax--underline.syntax--illegal {
+    background-color: darken(@red,20%);
+}
+.sublimelinter.outline.syntax--warning {
+    color: @white;
+    background-color: @main;
+}
+.sublimelinter.syntax--underline.syntax--warning {
+    background-color: darken(@red,20%);
+}
+.sublimelinter.outline.violation {
+    color: @white;
+    background-color: @dark-gray;
+}
+.sublimelinter.syntax--underline.violation {
+    background-color: darken(@red,20%);
+}
+.sublimelinter.syntax--mark.syntax--error {
+    color: darken(@red,20%);
+}
+.sublimelinter.syntax--mark.syntax--warning {
+    color: @orange;
+}
+.sublimelinter.gutter-mark {
+    color: @white;
+}
+.syntax--markup.syntax--deleted.git_gutter {
+    color: @red;
+}
+.syntax--markup.syntax--changed.git_gutter {
+    color: @orange;
+}
+.syntax--markup.syntax--inserted.git_gutter {
+    color: @green;
+}
+.syntax--markup.syntax--ignored.git_gutter {
+    color: @dark-gray;
+}
+.syntax--comment.line.syntax--double-slash .syntax--punctuation.syntax--definition.syntax--comment,
+.syntax--meta.syntax--structure.syntax--array .syntax--comment.syntax--block.syntax--json .syntax--punctuation.syntax--definition.syntax--comment {
+    color: @gray;
+}
+.syntax--text.syntax--find-in-files .syntax--entity.syntax--name.syntax--filename.syntax--find-in-files {
+    color: @red;
+}
+.syntax--support.syntax--type.syntax--property-name {
+    color: @cyan;
+}
+.syntax--meta.syntax--property-list .syntax--meta.syntax--property-name {
+    color: @cyan;
+}
+.syntax--source.syntax--css .syntax--keyword.syntax--other.syntax--unit,
+.syntax--source.syntax--less .syntax--keyword.syntax--other.syntax--unit,
+.syntax--source.syntax--scss .syntax--keyword.syntax--other.syntax--unit,
+.syntax--source.syntax--sass .syntax--keyword.syntax--other.syntax--unit {
+    color: @main;
+}
+.syntax--entity.syntax--other.syntax--less.syntax--mixin {
+    color: @blue;
+}
+.syntax--source.syntax--less .syntax--parameter.syntax--less .syntax--variable.syntax--parameter.syntax--misc.syntax--css {
+    color: @blue;
+}
+.syntax--source.syntax--less .syntax--meta.syntax--property-value.syntax--css .syntax--string.syntax--quoted.syntax--double.syntax--css .syntax--comment .syntax--markup.syntax--raw {
+    color: @green;
+}
+.syntax--constant.syntax--other.syntax--color.syntax--rgb-value .syntax--punctuation.syntax--definition.syntax--constant {
+    color: @red;
+}
+.syntax--meta.syntax--attribute-selector .syntax--string.syntax--unquoted.syntax--attribute-value {
+    color: @green;
+}
+.syntax--meta.syntax--attribute-selector .syntax--entity.syntax--other.syntax--attribute-name.syntax--attribute {
+    color: @red;
+}
+.syntax--source.gulpfile.syntax--js .syntax--meta.syntax--group.syntax--braces.syntax--round .syntax--meta.syntax--group.syntax--braces.syntax--curly .syntax--meta.syntax--group.syntax--braces.syntax--round .syntax--meta.syntax--function-call.syntax--with-arguments.syntax--js .syntax--variable.syntax--function.syntax--js,
+.syntax--source.gulpfile.syntax--js .syntax--meta.syntax--group.syntax--braces.syntax--round .syntax--meta.syntax--group.syntax--braces.syntax--curly .syntax--variable.syntax--function.syntax--js {
+    color: @blue;
+}
+.syntax--meta.syntax--function-call .syntax--support.syntax--type,
+.syntax--support.syntax--type {
+    color: @light-orange;
+}
+.syntax--source.syntax--python .syntax--meta.syntax--function-call.syntax--arguments.syntax--python {
+    color: @blue;
+}
+.embedding.syntax--php .syntax--entity.syntax--name.syntax--tag {
+    color: @red;
+}
+.syntax--source.syntax--go .syntax--meta.syntax--function-call.syntax--go {
+    color: @very-light-gray;
+}
+.syntax--meta.syntax--group.syntax--braces.syntax--curly.syntax--js .syntax--meta.syntax--property.syntax--object.syntax--js .syntax--variable.syntax--other.syntax--object.syntax--js {
+    color: @main;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--constant.syntax--language {
+    color: @red;
+}
+.syntax--source.syntax--elixir .syntax--support.syntax--type.syntax--elixir,
+.syntax--source.syntax--elixir .syntax--meta.syntax--module.syntax--elixir .syntax--entity.syntax--name.syntax--class.syntax--elixir {
+    color: @blue;
+}
+.syntax--source.syntax--elixir .syntax--entity.syntax--name.syntax--function {
+    color: @orange;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--other.syntax--symbol.syntax--elixir,
+.syntax--source.syntax--elixir .syntax--constant.syntax--other.syntax--keywords.syntax--elixir,
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol {
+    color: @red;
+}
+.syntax--source.syntax--elixir .syntax--punctuation.syntax--definition.syntax--string {
+    color: @green;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--other.syntax--readwrite.syntax--module.syntax--elixir,
+.syntax--source.syntax--elixir .syntax--variable.syntax--other.syntax--readwrite.syntax--module.syntax--elixir .syntax--punctuation.syntax--definition.syntax--variable.syntax--elixir {
+    color: @orange;
+}
+.syntax--source.syntax--elixir .syntax--punctuation.syntax--binary.syntax--elixir {
+    color: @purple;
+}
+.syntax--support.syntax--type.syntax--sys-types {
+    color: @red;
+}
+.syntax--constant.syntax--numeric.line-number.syntax--find-in-files:not(.match),
+.syntax--text.syntax--find-in-files .syntax--constant.syntax--numeric.line-number.syntax--find-in-files {
+    color: @dark-gray;
+}
+.syntax--entity.syntax--name.syntax--filename.syntax--find-in-files,
+.syntax--text.syntax--find-in-files .syntax--constant.syntax--numeric.line-number.syntax--match.syntax--find-in-files {
+    color: @main;
+}
+.title-bar {
+     color: @main !important;
+}

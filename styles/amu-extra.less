@@ -1,0 +1,104 @@
+[data-grammar*="gfm"]::shadow {
+    .syntax---markup.syntax--underline.syntax--link {
+        color: lighten(@red, 10%);
+
+        span.syntax--punctuation {
+            color: @red;
+        }
+    }
+    .syntax---markup.syntax--strike {
+        position: relative;
+        color: fade(@syntax-text-color, 50%);
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% + 4px);
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: fade(@syntax-text-color, 20%);
+        }
+    }
+    .syntax--table .syntax--border {
+        color: fade(@syntax-text-color, 50%);
+    }
+    .syntax---markup.syntax--heading {
+        color: @blue;
+    }
+    .syntax--punctuation.syntax--definition.syntax--begin,
+    .syntax--punctuation.syntax--definition.syntax--end {
+        color: @blue;
+    }
+    .syntax--punctuation.syntax--definition.syntax--begin + span:not(.function.parameter) {
+        color: lighten(@blue, 5%);
+    }
+}
+.bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: fade(@syntax-text-color, 10%);
+    box-shadow: inset 0 -1px 0 @syntax-cursor-color;
+    z-index: 100;
+}
+atom-text-editor.is-focused .selection .region,
+atom-text-editor .selection .region {
+    background-color: @syntax-selection-color;
+    border-radius: 0.125rem;
+}
+.syntax--variable {
+    &.syntax--instance, &.syntax--instance > * {
+        color: @red;
+    }
+}
+.syntax--meta {
+    &.syntax--delimiter.syntax--period {
+        color: @green;
+    }
+    &.syntax--brace {
+        color: @cyan;
+    }
+    &.syntax--tag.syntax--doctype {
+        color: @green;
+    }
+    .syntax--string.syntax--quoted {
+        color: @green;
+    }
+    &.syntax--array.syntax--json .syntax--string.syntax--quoted {
+        color: @cyan;
+
+        > * {
+            color: currentColor;
+        }
+    }
+    .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
+        color: @cyan;
+
+        * {
+            color: currentColor;
+        }
+    }
+    &.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
+        color: @green;
+
+        .syntax--punctuation.syntax--string {
+            color: currentColor;
+        }
+    }
+}
+.syntax--support.syntax--constant {
+    color: @cyan;
+}
+.syntax--keyword {
+    &.syntax--operator {
+        &.syntax--logical, &.syntax--comparison, &.syntax--assignment {
+            color: @green;
+        }
+    }
+}
+.syntax--punctuation.syntax--section.syntax--embedded, .syntax--variable.syntax--interpolation {
+    .syntax--source.syntax--php {
+        color: currentColor;
+    }
+}
