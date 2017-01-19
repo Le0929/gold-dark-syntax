@@ -2,12 +2,15 @@
   "name": "gold-dark-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A syntax theme for Atom Material UI. Inspired by silvestreh's atom-material-syntax.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "material",
+    "dark",
+    "rich",
   ],
-  "repository": "https://github.com/atom/gold-dark-syntax",
+  "repository": "https://github.com/Le0929/gold-dark-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
