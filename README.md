@@ -2,4 +2,4 @@
 
 A syntax theme for Atom Material UI. Inspired by silvestreh's atom-material-syntax.
 
-![A screenshot of your theme](https://github.com/Le0929/gold-dark-syntax/edit/master/Screen Shot 2017-01-27 at 17.13.16.png)
+![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
